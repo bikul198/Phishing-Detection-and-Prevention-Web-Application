@@ -38,7 +38,6 @@ The detection system is powered by a machine learning model built with Python an
 
 ## ⚙️ How to Run Locally
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/bikul198/phishing-detection-app.git
-   cd phishing-detection-app
+pip install -r requirements.txt
+python app.py
+
