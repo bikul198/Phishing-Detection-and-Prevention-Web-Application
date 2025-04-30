@@ -1,0 +1,122 @@
+/* Background: Soft professional gradient */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    z-index: -1;
+}
+
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* Body Layout */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Container: Responsive & glass effect */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 35px;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Heading */
+h1 {
+    color: #ffffff;
+    font-size: 1.8em;
+    margin-bottom: 25px;
+}
+
+/* Input Field */
+input[type="text"] {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #black;
+}
+
+/* Button */
+button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    transform: scale(1.05);
+}
+
+/* Results */
+#result {
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Message colors */
+.safe {
+    color: #00ff88;
+}
+.phishing {
+    color: #ff5555;
+}
+.invalid {
+    color: #ffc107;
+}
+/* Placeholder text styling */
+input::placeholder {
+    color: #cccccc; /* light gray, professional look */
+    opacity: 1;      /* ensures full visibility */
+}
+
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+    input[type="text"], button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+}
