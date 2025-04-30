@@ -39,5 +39,6 @@ The detection system is powered by a machine learning model built with Python an
 ## ⚙️ How to Run Locally
 
 pip install -r requirements.txt
+
 python app.py
 
